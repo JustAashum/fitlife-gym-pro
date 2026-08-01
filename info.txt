@@ -1,0 +1,14 @@
+For our FitLife Gym Pro project, we'll use:
+
+✅ React 19
+✅ Vite
+	=== Vite. It's the modern standard for React development and gives you a faster, 		    smoother workflow.
+	=== Vite uses main.jsx instead of index.js.
+	=== command- npm create vite@latest .  (the . (dot) tells Vite to create the project 			                       in the current folder.)
+✅ Bootstrap 5
+✅ React Router
+✅ AOS Animations
+✅ React Icons
+✅ EmailJS
+✅ Chart.js
+✅ Responsive Design
