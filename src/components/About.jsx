@@ -1,6 +1,7 @@
 import "./../styles/about.css";
 import aboutImage from "../assets/images/about.jpg";
 import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -50,9 +51,9 @@ function About() {
 
         </div>
 
-        <button className="learn-btn">
-          Learn More
-        </button>
+        <Link to="/about" className="learn-btn">
+        Learn More
+        </Link>
 
       </div>
 

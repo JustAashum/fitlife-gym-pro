@@ -1,0 +1,122 @@
+.why-choose {
+    padding: 80px 24px;
+    background: var(--surface);
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.why-heading {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.why-heading span {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.why-heading h2 {
+    color: var(--text);
+    font-size: clamp(32px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 12px 0 16px;
+}
+
+.why-heading p {
+    max-width: 600px;
+    font-size: 16px;
+}
+
+
+/* ================================
+   BENEFITS
+================================ */
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.benefit-card {
+    background: var(--background);
+    padding: 26px 22px;
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.benefit-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+}
+
+
+/* ================================
+   ICON
+================================ */
+
+.benefit-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(251, 191, 36, 0.12);
+    color: var(--primary);
+
+    border-radius: 12px;
+
+    font-size: 21px;
+
+    margin-bottom: 18px;
+}
+
+.benefit-card h3 {
+    color: var(--text);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .why-choose {
+        padding: 65px 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,5 +1,6 @@
 import "./../styles/hero.css";
 import heroImage from "../assets/images/hero.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
       <div className="hero-content">
 
         <span className="tag">
-          🔥 India's Premium Fitness Center
+          🔥 PREMIUM FITNESS EXPERIENCE
         </span>
 
         <h1>
@@ -29,13 +30,13 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          <button className="btn-primary">
-            Start Free Trial
-          </button>
+          <Link to="/contact" className="learn-btn">
+          Start Free Trial
+        </Link>
 
-          <button className="btn-outline">
-            Explore Plans
-          </button>
+          <Link to="/pricing" className="learn-btn">
+          Explore Plans
+          </Link>
 
         </div>
 

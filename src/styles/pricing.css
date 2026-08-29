@@ -1,0 +1,288 @@
+/* ================================
+   PRICING SECTION
+================================ */
+
+.pricing {
+    padding: 90px 24px;
+    background: var(--background);
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.pricing-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.pricing-heading span {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.pricing-heading h2 {
+    color: var(--text);
+    font-size: clamp(32px, 4vw, 40px);
+    margin: 12px 0;
+}
+
+.pricing-heading p {
+    font-size: 16px;
+}
+
+
+/* ================================
+   PRICING GRID
+================================ */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+
+/* ================================
+   CARD
+================================ */
+
+.pricing-card {
+    position: relative;
+
+    background: var(--surface);
+
+    padding: 32px 28px;
+
+    border-radius: var(--radius);
+
+    border: 1px solid var(--border);
+
+    transition: var(--transition);
+}
+
+.pricing-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+
+/* ================================
+   POPULAR CARD
+================================ */
+
+.pricing-card.popular {
+    border: 1px solid var(--primary);
+
+    transform: translateY(-10px);
+}
+
+.pricing-card.popular:hover {
+    transform: translateY(-15px);
+}
+
+
+/* ================================
+   POPULAR BADGE
+================================ */
+
+.popular-badge {
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: var(--primary);
+
+    color: #111;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ================================
+   ICON
+================================ */
+
+.plan-icon {
+    color: var(--primary);
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   PLAN NAME
+================================ */
+
+.pricing-card h3 {
+    color: var(--text);
+
+    font-size: 22px;
+
+    margin-bottom: 6px;
+}
+
+.plan-description {
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================================
+   PRICE
+================================ */
+
+.price {
+    color: var(--text);
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 20px;
+
+    vertical-align: top;
+}
+
+.price small {
+    font-size: 13px;
+
+    font-weight: 400;
+
+    color: var(--text-light);
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+.plan-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-bottom: 28px;
+}
+
+.feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+.feature svg {
+    color: var(--primary);
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.plan-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 30px;
+
+    border: 1px solid var(--primary);
+
+    background: transparent;
+
+    color: var(--primary);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.plan-button:hover {
+    background: var(--primary);
+
+    color: #111;
+}
+
+
+/* ================================
+   POPULAR BUTTON
+================================ */
+
+.pricing-card.popular .plan-button {
+    background: var(--primary);
+
+    color: #111;
+}
+
+.pricing-card.popular .plan-button:hover {
+    background: var(--primary-dark);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 900px) {
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-card.popular {
+        transform: none;
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    .pricing {
+        padding: 65px 20px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

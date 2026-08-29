@@ -1,4 +1,5 @@
 import { FaDumbbell } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./../styles/navbar.css";
 
 function Navbar() {
@@ -6,29 +7,31 @@ function Navbar() {
     <nav className="navbar-custom">
 
       <div className="logo">
-        <FaDumbbell />
-        <span>FitLife Gym</span>
+        <Link to="/">
+          <FaDumbbell />
+          <span>Forge Fitness</span>
+        </Link>
       </div>
 
       <ul className="nav-links">
 
-        <li><a href="#">Home</a></li>
+        <li><Link to="/">Home</Link></li>
 
-        <li><a href="#">About</a></li>
+        <li><Link to="/about">About</Link></li>
 
-        <li><a href="#">Services</a></li>
+        <li><Link to="/services">Services</Link></li>
 
-        <li><a href="#">Trainers</a></li>
+        <li><Link to="/trainers">Trainers</Link></li>
 
-        <li><a href="#">Pricing</a></li>
+        <li><Link to="/pricing">Pricing</Link></li>
 
-        <li><a href="#">Contact</a></li>
+        <li><Link to="/contact">Contact</Link></li>
 
       </ul>
 
-      <button className="join-btn">
+      <Link to="/contact" className="join-btn">
         Join Now
-      </button>
+      </Link>
 
     </nav>
   );
